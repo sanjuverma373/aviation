@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* slide */
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     
+     
+      
+.slick-dots li.slick-active {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 28px;
+        background: #ffffff !important;
+      }
+      
+      .slick-dots li button:before {
+        content: "" !important;
+      }
+      
+      .slick-dots li {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 15px !important;
+        background: #1a1b39 !important;
+      }
+      
+      .slick-dots {
+        position: absolute;
+        bottom: 70% !important;
+        display: block;
+        transform: rotate(90deg);
+        width: unset !important;
+        padding: 0;
+        margin: 0;
+        right: -25% !important;
+        list-style: none;
+        text-align: unset !important;
+      }
+      
+      @media (max-width: 1280px) {
+        .slick-dots {
+          right: -15% !important;
+        }
+      }
+      
+      @media (max-width: 1023.9px) {
+        .slick-dots {
+          right: -7% !important;
+        }
+      }
+      
+      @media (max-width: 640px) {
+        .slick-dots {
+          left: 0% !important;
+          bottom: -8% !important;
+          transform: rotate(0deg);
+        }
+      }  
+      
+       
